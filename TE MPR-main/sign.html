@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="./register.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script defer src="./index.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-firestore-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-auth-compat.js"></script>
@@ -26,27 +25,17 @@
       
     <ul class="flex space-x-6 text-white">
             <li><a href="/">Home</a></li>
-            <li><a href="/file-taxes">File Taxes</a></li>
-            <li><a href="/services">Services</a></li>
-            <li><a href="/about-us">About Us</a></li>
-            <li><a href="/pricing">Pricing</a></li>
-            <li><a href="Blogs.html">Blogs</a></li>
-          </ul>
-</nav>
+            <li>File Taxes</a></li>
+            <li>Services</a></li>
+            <li>About Us</a></li>
+            <li>Pricing</a></li>
+            <li>Blogs</a></li>
+    </ul>
+      </nav>
     <div class="container">
         <form id="form" action="/">
-            <h1>Registration </h1>
+            <h1>Sign In </h1>
             <hr>
-            <div class="input-control">
-                <label for="panCard">PAN</label>
-                <input id="panCard" name="panCard" type="text">
-                <div class="error"></div>
-            </div>
-            <div class="input-control">
-                <label for="username">Full Name</label>
-                <input id="username" name="username" type="text">
-                <div class="error"></div>
-            </div>
             <div class="input-control">
                 <label for="email">Email</label>
                 <input id="email" name="email" type="text">
@@ -57,21 +46,21 @@
                 <input id="password" name="password" type="password">
                 <div class="error"></div>
             </div>
-            <div class="input-control">
-                <label for="password2">Confirm Password</label>
-                <input id="password2" name="password2" type="password">
-                <div class="error"></div>
-            </div>
-            <button type="submit" onclick="signUp()">Register</button>
-            <a href="sign.html">Back to Login</a>
-              </div>
+            <button id="submit-btn" onclick="signIn()">Sign In</button>
+            <span class="signup">Don't have account?
+                <a href="register.html">Register</a>
 
-              
-              
-        </form>
+                <div id="sign-in-status"><a href="dashboard.html"></a>
+                </div>
+                
+                
+
+    
+         
     </div>
 
     
 </body>
 
 </html>
+
