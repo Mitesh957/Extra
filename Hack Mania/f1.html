@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prisoner Profile</title>
+</head>
+<body>
+    <h1>Create Prisoner Profile</h1>
+    <form id="prisoner-profile-form" method="POST">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <button id="submit" type="submit">Create Profile</button>
+    </form>
+
+    <!-- Include Firebase scripts using script tags -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.2/firebase-firestore.js"></script>
+    <!-- Add other Firebase services if needed -->
+
+    <script src="firebase-config.js"></script>
+    <script src="prisoner-profile.js"></script>
+</body>
+</html>
